@@ -134,11 +134,6 @@ docker run -d -p 8000:8000 --name tww-booking-service tww-booking-service
 ```bash
 http://localhost:8000/docs
 ```
-
----
-
-Here is the **regenerated `Dependencies` section** for your Markdown README, based on your updated `requirements.txt`:
-
 ---
 
 ### 🧩 Dependencies
@@ -226,10 +221,4 @@ pip install -r requirements.txt
 
 This project is licensed under the MIT License.
 
-```
-
 ---
-
-Let me know if you'd like this saved as a downloadable `README.md` file or published to a GitHub repo directly.
-```
-
