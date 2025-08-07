@@ -9,11 +9,12 @@ import os
 app = FastAPI()
 
 # Placeholders for Google APIs and Payment Gateway
-from utils.google_drive import create_booking_folder, upload_file_to_folder
-from utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
-from utils.pdf_generator import generate_booking_pdf
-from utils.notifications import send_whatsapp_message
-from models.booking import BookingRequest
+from ..utils.google_drive import create_booking_folder, upload_file_to_folder
+from ..utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
+from ..utils.pdf_generator import generate_booking_pdf
+from ..utils.payment_gateway import create_upi_payment_link, verify_payment_webhook
+from ..utils.notifications import send_whatsapp_message
+from ..models.booking import BookingRequest
 
 @app.post("/payment/webhook")
 async def payment_webhook(request: Request):

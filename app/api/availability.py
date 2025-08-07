@@ -10,7 +10,7 @@ import os
 app = FastAPI()
 
 # Placeholders for Google APIs and Payment Gateway
-from utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
+from ..utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
 
 # ------------ API ROUTES ------------
 
