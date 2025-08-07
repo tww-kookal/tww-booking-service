@@ -4,15 +4,15 @@ from fastapi import FastAPI, UploadFile, File, Form, BackgroundTasks, Request
 from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime
-from models.booking import BookingRequest
+from ..models.booking import BookingRequest
 import os
 
 app = FastAPI()
 
 # Placeholders for Google APIs and Payment Gateway
-from utils.google_drive import create_booking_folder, upload_file_to_folder
-from utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
-from utils.pdf_generator import generate_booking_pdf
+from ..utils.google_drive import create_booking_folder, upload_file_to_folder
+from ..utils.google_sheets import insert_booking_record, update_payment_status, insert_feedback, get_home_availability
+from ..utils.pdf_generator import generate_booking_pdf
 
 # ------------ API ROUTES ------------
 

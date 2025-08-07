@@ -6,8 +6,8 @@ from datetime import datetime
 class BookingRequest(BaseModel):
     name: str
     room_name: str
+    contact_number: str
     checkin_date: str  # YYYY-MM-DD
     checkout_date: str
     number_of_people: int
     amenities: List[str]
-    contact_number: str
