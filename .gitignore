@@ -1,5 +1,5 @@
-"venv/" 
+venv/ 
 __pycache__/ 
-"*.pyc" 
-".env" 
+*.pyc 
+.env 
 credentials/service_account.json
