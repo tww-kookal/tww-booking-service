@@ -1,6 +1,7 @@
 # 🏡 TWW Booking Service
-
 A Python-based microservice for managing homestay bookings, integrated with Google Drive, Google Sheets, WhatsApp notifications, UPI payment simulation, PDF generation, and feedback collection.
+
+A modular, scalable microservice for managing bookings of vacation homes with Google Sheets, Google Drive, WhatsApp notifications, PDF generation, payment simulation, and containerization support.
 
 ---
 
@@ -12,6 +13,7 @@ tww-booking-service/
 ├── config.py                      # App configuration loader
 ├── requirements.txt               # Project dependencies
 ├── Dockerfile                     # Docker container definition
+├── README.md                      # Project overview and usage
 ├── credentials/
 │   └── service_account.json       # Google API credentials
 ├── utils/
@@ -23,47 +25,6 @@ tww-booking-service/
 │   ├── scheduler.py               # Feedback reminder scheduler
 └── static/
     └── confirmation_template.html # HTML template for PDF booking confirmations
-
-
-Here is a complete, well-structured `README.md` file for your `tww-booking-service` project, including all requested sections in a single markdown file:
-
----
-
-```markdown
-# TWW Booking Service
-
-A modular, scalable microservice for managing bookings of vacation homes with Google Sheets, Google Drive, WhatsApp notifications, PDF generation, payment simulation, and containerization support.
-
----
-
-## 📁 Project Structure
-
-```
-
-tww-booking-service/
-│
-├── app/
-│   ├── main.py                     # FastAPI app entry point
-│   ├── api/
-│   │   ├── booking.py              # API endpoints for booking operations
-│   │   └── availability.py         # API endpoints for checking availability
-│   └── utils/
-│       ├── google\_drive.py         # Folder creation and file upload on Google Drive
-│       ├── google\_sheets.py        # Google Sheets integration
-│       ├── pdf\_generator.py        # Booking PDF generation
-│       ├── payment\_gateway.py      # Simulate UPI payments and webhook
-│       ├── notifications.py        # Send WhatsApp messages
-│       └── scheduler.py            # Remind users for feedback
-│
-├── config.py                       # Configuration constants
-├── credentials/
-│   └── service\_account.json        # Google service account credentials
-│
-├── Dockerfile                      # Docker image setup
-├── requirements.txt                # Python package dependencies
-└── README.md                       # Project overview and usage
-
-````
 
 ---
 
