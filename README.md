@@ -137,16 +137,62 @@ http://localhost:8000/docs
 
 ---
 
-## 📦 Dependencies
+Here is the **regenerated `Dependencies` section** for your Markdown README, based on your updated `requirements.txt`:
 
-* `fastapi` – Web framework
-* `uvicorn` – ASGI server
-* `google-api-python-client`, `gspread`, `oauth2client` – Google Sheets & Drive
-* `pdfkit`, `reportlab` – PDF generation
-* `twilio` – WhatsApp Messaging
-* `apscheduler` – Scheduled feedback reminders
-* `python-dotenv` – Environment variables
+---
 
+### 🧩 Dependencies
+
+This project depends on the following Python packages (from `requirements.txt`):
+
+* `annotated-types==0.7.0`
+* `anyio==4.10.0`
+* `cachetools==5.5.2`
+* `certifi==2025.8.3`
+* `charset-normalizer==3.4.2`
+* `click==8.2.1`
+* `colorama==0.4.6`
+* `fastapi==0.116.1` – Web framework for building APIs
+* `google-api-core==2.25.1`
+* `google-api-python-client==2.178.0` – Google APIs Python client
+* `google-auth==2.40.3`
+* `google-auth-httplib2==0.2.0`
+* `google-auth-oauthlib==1.2.2`
+* `googleapis-common-protos==1.70.0`
+* `gspread==6.2.1` – Google Sheets API wrapper
+* `h11==0.16.0`
+* `httplib2==0.22.0`
+* `idna==3.10`
+* `oauth2client==4.1.3`
+* `oauthlib==3.3.1`
+* `pdfkit==1.0.0` – Convert HTML to PDF
+* `pillow==11.3.0` – Python Imaging Library
+* `proto-plus==1.26.1`
+* `protobuf==6.31.1`
+* `pyasn1==0.6.1`
+* `pyasn1_modules==0.4.2`
+* `pydantic==2.11.7` – Data validation
+* `pydantic_core==2.33.2`
+* `pyparsing==3.2.3`
+* `python-dotenv==1.1.1` – Load environment variables
+* `reportlab==4.4.3` – PDF generation library
+* `requests==2.32.4` – HTTP library
+* `requests-oauthlib==2.0.0`
+* `rsa==4.9.1`
+* `six==1.17.0`
+* `sniffio==1.3.1`
+* `starlette==0.47.2` – ASGI toolkit (used with FastAPI)
+* `typing-inspection==0.4.1`
+* `typing_extensions==4.14.1`
+* `uritemplate==4.2.0`
+* `urllib3==2.5.0`
+* `uvicorn==0.35.0` – ASGI server for running FastAPI apps
+
+To install all dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
 ---
 
 ## 🔐 Security Note
