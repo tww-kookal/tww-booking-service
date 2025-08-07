@@ -3,7 +3,7 @@
 from fastapi import FastAPI, UploadFile, File, Form, BackgroundTasks, Request
 from pydantic import BaseModel
 from typing import List, Optional
-from models.feedback import FeedbackRequest
+from ..models.feedback import FeedbackRequest
 from datetime import datetime
 import os
 
